@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; border-radius:12px; overflow:hidden;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <radialGradient id="glowPulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.45; }
+    }
+    @keyframes floatPill1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes floatPill2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(7px); }
+    }
+    @keyframes scanLine {
+      0% { transform: translateX(-1200px); }
+      100% { transform: translateX(1200px); }
+    }
+    @keyframes dashMove {
+      to { stroke-dashoffset: -40; }
+    }
+    .orb-glow {
+      animation: pulseOrb 8s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .pill-1 { animation: floatPill1 5s ease-in-out infinite; }
+    .pill-2 { animation: floatPill2 6s ease-in-out infinite; }
+    .flow-dash {
+      stroke-dasharray: 6, 6;
+      animation: dashMove 2.5s linear infinite;
+    }
+  </style>
+
+  <!-- Deep space background -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" />
+
+  <!-- Dynamic ambient glowing orbs in the background -->
+  <circle class="orb-glow" cx="200" cy="90" r="160" fill="url(#glowPulse)" />
+  <circle class="orb-glow" cx="1020" cy="270" r="180" fill="url(#glowPulse)" style="animation-delay: -3s;" />
+
+  <!-- Subtle tech circuit / grid layer in background -->
+  <g opacity="0.12" stroke="#38bdf8" stroke-width="1">
+    <path d="M 0 60 H 1200 M 0 120 H 1200 M 0 180 H 1200 M 0 240 H 1200 M 0 300 H 1200" />
+    <path d="M 150 0 V 360 M 300 0 V 360 M 450 0 V 360 M 600 0 V 360 M 750 0 V 360 M 900 0 V 360 M 1050 0 V 360" />
+  </g>
+
+  <!-- Animated dynamic data flow lines at lower canvas -->
+  <path class="flow-dash" d="M 120 280 Q 300 330 600 290 T 1080 300" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.35" />
+  <path class="flow-dash" d="M 150 70 Q 500 20 850 60 T 1120 40" fill="none" stroke="#c084fc" stroke-width="2" opacity="0.25" style="animation-direction: reverse;" />
+
+  <!-- Animated Floating Feature Pills (Safe positioning away from main text) -->
+  <g class="pill-1" transform="translate(80, 42)">
+    <rect width="165" height="34" rx="17" fill="url(#badgeGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.4" />
+    <circle cx="18" cy="17" r="4" fill="#38bdf8" />
+    <text x="32" y="22" fill="#94a3b8" font-size="12" font-weight="600">📱 30,000+ Real Devices</text>
+  </g>
+
+  <g class="pill-2" transform="translate(955, 42)">
+    <rect width="165" height="34" rx="17" fill="url(#badgeGrad)" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.4" />
+    <circle cx="18" cy="17" r="4" fill="#818cf8" />
+    <text x="32" y="22" fill="#94a3b8" font-size="12" font-weight="600">⚡ Android &amp; iOS Grids</text>
+  </g>
+
+  <g class="pill-2" transform="translate(80, 285)">
+    <rect width="175" height="34" rx="17" fill="url(#badgeGrad)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.4" />
+    <circle cx="18" cy="17" r="4" fill="#c084fc" />
+    <text x="32" y="22" fill="#94a3b8" font-size="12" font-weight="600">🤖 AI &amp; MCP Test Agents</text>
+  </g>
+
+  <g class="pill-1" transform="translate(945, 285)">
+    <rect width="175" height="34" rx="17" fill="url(#badgeGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.4" />
+    <circle cx="18" cy="17" r="4" fill="#38bdf8" />
+    <text x="32" y="22" fill="#94a3b8" font-size="12" font-weight="600">🛡️ Self-Hosted OpenSTF</text>
+  </g>
+
+  <!-- FOREGROUND BRANDING & TITLES (Crystal Clear & Prominent) -->
+  <!-- Tagline / Category Badge -->
+  <g transform="translate(600, 105)">
+    <rect x="-140" y="-14" width="280" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6" />
+    <text text-anchor="middle" y="5" fill="#38bdf8" font-size="11.5" font-weight="700" letter-spacing="2">CURATED QUALITY ENGINEERING</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="172" text-anchor="middle" fill="url(#primaryGrad)" font-size="46" font-weight="800" letter-spacing="-0.5" filter="url(#neonGlow)">
+    Awesome Real Device Cloud
+  </text>
+  <text x="600" y="172" text-anchor="middle" fill="url(#primaryGrad)" font-size="46" font-weight="800" letter-spacing="-0.5">
+    Awesome Real Device Cloud
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="212" text-anchor="middle" fill="#f8fafc" font-size="17" font-weight="500" letter-spacing="0.2">
+    Top Commercial SaaS Device Farms &amp; Open-Source Self-Hosted Grids
+  </text>
+
+  <!-- Detail tags -->
+  <text x="600" y="242" text-anchor="middle" fill="#64748b" font-size="13" font-weight="500">
+    Appium • Espresso • XCUITest • WebRTC Remote Control • Physical Android &amp; iOS Farms
+  </text>
+</svg>
