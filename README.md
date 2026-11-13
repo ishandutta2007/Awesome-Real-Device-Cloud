@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Real-Device-Cloud/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Real-Device-Cloud?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Real-Device-Cloud/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Real-Device-Cloud?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Device-Cloud/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Real-Device-Cloud?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Device-Cloud/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg?style=flat-square" alt="License: CC0" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -67,7 +67,7 @@ The commercial real device cloud market ranked in descending order by company sc
 
 Self-hosted, community-driven real device clouds and device automation orchestration tools, sorted in descending order by GitHub stargazers count:
 
-| Repository | GitHub Stars | License | Primary Tech Stack | Description |
+| Repository | GitHub_Stars | License | Primary Tech Stack | Description |
 |:---|:---:|:---|:---|:---|
 | 🚜 **[openstf/stf](https://github.com/openstf/stf)** | [![Stars](https://img.shields.io/github/stars/openstf/stf?style=social&color=white)](https://github.com/openstf/stf/stargazers) | Apache-2.0 | Node.js, RethinkDB, ZeroMQ, AngularJS | The foundational Smartphone Test Farm for controlling Android devices remotely from a browser. |
 | 🤖 **[mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp)** | [![Stars](https://img.shields.io/github/stars/mobile-next/mobile-mcp?style=social&color=white)](https://github.com/mobile-next/mobile-mcp/stargazers) | Apache-2.0 | TypeScript, MCP (Model Context Protocol) | AI-agent real device and emulator control via native accessibility tree and 30+ MCP tools. |
@@ -145,55 +145,55 @@ Self-hosted, community-driven real device clouds and device automation orchestra
 
 ### 🚜 openstf/stf
 - **GitHub Repository:** [openstf/stf](https://github.com/openstf/stf)
-- **GitHub Stars:** 13,900+ ⭐
+- **GitHub_Stars:** 13,900+ ⭐
 - **License:** Apache-2.0
 - **Overview:** The original Smartphone Test Farm developed by CyberAgent. Allowed web-based remote control of physical Android devices over ADB with real-time screen streaming via Minicap and touch input via Minitouch. Although the original repo was archived, it remains the architectural blueprint for modern Android device farms.
 
 ### 🤖 mobile-next/mobile-mcp
 - **GitHub Repository:** [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp)
-- **GitHub Stars:** 10,500+ ⭐
+- **GitHub_Stars:** 10,500+ ⭐
 - **License:** Apache-2.0
 - **Overview:** Bridges AI coding agents (Claude Code, Cursor, GitHub Copilot) directly to local and cloud-connected physical mobile devices using Anthropic's Model Context Protocol (MCP). It interacts via accessibility trees rather than token-heavy screenshots, enabling deterministic end-to-end automation.
 
 ### ⚡ firerpa/lamda
 - **GitHub Repository:** [firerpa/lamda](https://github.com/firerpa/lamda)
-- **GitHub Stars:** 8,700+ ⭐
+- **GitHub_Stars:** 8,700+ ⭐
 - **License:** GPL-3.0
 - **Overview:** A high-performance Android device control and automation engine optimized for device clusters. Features low-latency WebRTC video streaming, Frida script injection, reverse proxies, and Python-native automation bindings.
 
 ### 🛠️ DeviceFarmer/stf
 - **GitHub Repository:** [DeviceFarmer/stf](https://github.com/DeviceFarmer/stf)
-- **GitHub Stars:** 4,600+ ⭐
+- **GitHub_Stars:** 4,600+ ⭐
 - **License:** Apache-2.0
 - **Overview:** The actively maintained community fork of STF. Resolves Node.js dependency deprecations, adds support for Android 10 through Android 15, and provides remote ADB port forwarding (`adb connect`) so developers can debug remote hardware as if plugged in locally.
 
 ### 🚀 SonicCloudOrg/sonic-server
 - **GitHub Repository:** [SonicCloudOrg/sonic-server](https://github.com/SonicCloudOrg/sonic-server)
-- **GitHub Stars:** 2,200+ ⭐
+- **GitHub_Stars:** 2,200+ ⭐
 - **License:** Apache-2.0
 - **Overview:** Modern, enterprise-ready cloud device platform built with Spring Cloud and Vue 3. Features no-code visual test builder, distributed agent architecture for multi-datacenter setups, Chrome DevTools WebView debugging, and Jenkins integration.
 
 ### 🧩 AppiumTestDistribution/appium-device-farm
 - **GitHub Repository:** [AppiumTestDistribution/appium-device-farm](https://github.com/AppiumTestDistribution/appium-device-farm)
-- **GitHub Stars:** 650+ ⭐
+- **GitHub_Stars:** 650+ ⭐
 - **License:** Apache-2.0
 - **Overview:** An official Appium 2.0 plugin that automatically discovers connected physical iOS/Android devices and emulators across distributed nodes, queueing and provisioning sessions dynamically during parallel test execution.
 
 ### 📺 shamanec/GADS
 - **GitHub Repository:** [shamanec/GADS](https://github.com/shamanec/GADS)
-- **GitHub Stars:** 400+ ⭐
+- **GitHub_Stars:** 400+ ⭐
 - **License:** AGPL-3.0 (Core)
 - **Overview:** A Go-based lightweight device farm supporting physical Android, iOS, and Smart TV platforms (Samsung Tizen, LG WebOS). Delivers sub-second WebRTC screen streaming and integrates directly into Selenium Grid 4 hubs.
 
 ### 🏢 VKCOM/devicehub
 - **GitHub Repository:** [VKCOM/devicehub](https://github.com/VKCOM/devicehub)
-- **GitHub Stars:** 250+ ⭐
+- **GitHub_Stars:** 250+ ⭐
 - **License:** Apache-2.0
 - **Overview:** Built by the VK engineering team, DeviceHub re-architects the STF concept using Go and MongoDB for higher device concurrency, fast video streaming, and seamless APK sideloading.
 
 ### 📦 zebrunner/mcloud
 - **GitHub Repository:** [zebrunner/mcloud](https://github.com/zebrunner/mcloud)
-- **GitHub Stars:** 200+ ⭐
+- **GitHub_Stars:** 200+ ⭐
 - **License:** Apache-2.0
 - **Overview:** A containerized mobile device farm built on top of Docker and Appium, designed to orchestrate hundreds of Android and iOS smartphones with unified Selenium/Appium routing.
 
